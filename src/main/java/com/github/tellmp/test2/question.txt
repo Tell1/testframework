@@ -1,0 +1,15 @@
+Please complete the following question. You should write clear code, copy the style
+ given and provide comments where you would in a production environment.
+ 
+* There is a basic scaffold for a Pair template class provided. Implement the rest
+	of the class according to the information given in the class comment.
+	
+* There is a 'processing function' in Test.java. Though it functions as it should
+	and produces the right output, it is incredibly slow. Speed up the function
+	using some kind of multi-threading or async processing. Also replace the sort
+	near the end with an STL equivalent. For the last part,	you must also use the 
+	pair structure you created in the previous question. You may create new data 
+	structures to help you along or improve read-ability. You may *not* modify 
+	the Taco class. You may use any STL structure or function available in the JRE 
+	(version 6).  I can get the processing time down to 4 seconds with 1000 tacos. 
+	What can you get?

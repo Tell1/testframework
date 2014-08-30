@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * This class determines if a given string consisting entirely of the characters ()[]{} is balanced.
  * In other words every opening bracket must have a closing bracket of the same type following it,
  * and the string in between the pair must also be balanced.
- *
+ * <p/>
  * Created by Tell Mueller-Pettenpohl on 8/17/14.
  */
 public class BalancedBrackets {
@@ -23,13 +23,13 @@ public class BalancedBrackets {
         if (brackets == null || brackets.isEmpty()) {
             return true;
         }
-        if (brackets.contains("()")){
+        if (brackets.contains("()")) {
             return isBalanced(brackets.replaceFirst("\\(\\)", ""));
         }
-        if (brackets.contains("[]")){
+        if (brackets.contains("[]")) {
             return isBalanced(brackets.replaceFirst("\\[\\]", ""));
         }
-        if (brackets.contains("{}")){
+        if (brackets.contains("{}")) {
             return isBalanced(brackets.replaceFirst("\\{\\}", ""));
         }
         return false;
@@ -41,7 +41,7 @@ public class BalancedBrackets {
                 "\n(i.e.: \"()[]{}(([])){[()][]}\")");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
-        if(input != null) {
+        if (input != null) {
             System.out.println(isBalanced(input) ? "balanced" : "not balanced");
         }
     }

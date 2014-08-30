@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * This class generates the integers obtained by spiralling outward in an
  * anti-clockwise direction from row r column c, starting upward.
- *
+ * <p/>
  * Created by Tell Mueller-Pettenpohl on 8/17/14.
  */
 
@@ -15,9 +15,10 @@ public class Spiral {
 
     /**
      * This method determines the number of iterations through the given array.
+     *
      * @param array of integers for spiralling
-     * @param y first starting point index
-     * @param x second starting point index
+     * @param y     first starting point index
+     * @param x     second starting point index
      */
     public static void printSpiral(int[][] array, int y, int x) {
         x--;
@@ -33,10 +34,11 @@ public class Spiral {
      * This method prints the integers obtained by spiralling outward in an
      * anti-clockwise direction from row r column c, starting upward
      * of the given array.
+     *
      * @param array of integers for spiralling
-     * @param y first starting point index
-     * @param x second starting point index
-     * @param step number of max steps while spiralling in one direction
+     * @param y     first starting point index
+     * @param x     second starting point index
+     * @param step  number of max steps while spiralling in one direction
      * @return true if there are more integers to print
      */
     private static boolean printIteration(int[][] array, int y, int x, int step) {
@@ -75,9 +77,10 @@ public class Spiral {
     /**
      * Checks if the indices x and y are still inside the boundaries of the
      * given array.
+     *
      * @param array given array to check boundaries
-     * @param y index
-     * @param x index
+     * @param y     index
+     * @param x     index
      * @return true if its still inside the boundaries of the given array
      */
     protected static boolean checkBoundaries(int[][] array, int y, int x) {
@@ -90,6 +93,7 @@ public class Spiral {
     /**
      * Fills the given array with consecutive integers from left to right,
      * top to bottom, starting with 1.
+     *
      * @param arr array to fill
      */
     protected static void fillArray(int[][] arr) {

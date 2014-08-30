@@ -16,16 +16,10 @@ import java.util.List;
 
 public class CSVParsing {
 
-    enum STATE {
-        START,
-        INTEGER,
-        STRING,
-        END
-    }
-
     /**
      * This method parses a string of n comma-separated values, each value being an integer or a string.
      * The output is generated using the state pattern to determine how to separate the given string.
+     *
      * @param input a string of n comma-separated values
      * @return a list of n consecutive lines, where line i contains the ith value of the input
      */
@@ -93,7 +87,6 @@ public class CSVParsing {
         return parsedList;
     }
 
-
     public static void main(String[] args) throws Exception {
         System.out.println("Please change the data in src/main/resources/data.csv" +
                 " to define new input for the CSVParser.");
@@ -108,6 +101,14 @@ public class CSVParsing {
                 }
             }
         }
+    }
+
+
+    enum STATE {
+        START,
+        INTEGER,
+        STRING,
+        END
     }
 
 }

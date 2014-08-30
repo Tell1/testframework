@@ -14,11 +14,11 @@ import java.util.regex.Pattern;
  * This class determines from the time displayed
  * on each watch, the actual time.
  * If it is not possible, print "Look at the sun".
- *
+ * <p/>
  * Note: This class is implemented with the assumption that the given times
  * can be in AM or PM. Therefore all the possible time representations are
  * checked in a gray-code approach. (i.e.: 5:00 12:00 10:00 -> 17:00 00:00 22:00)
- *
+ * <p/>
  * Created by Tell Mueller-Pettenpohl on 8/17/14.
  */
 public class TimeConfusionAMPM {
@@ -28,6 +28,7 @@ public class TimeConfusionAMPM {
 
     /**
      * This method generates all possible AM and PM times for a list of times.
+     *
      * @param times list of times as Long
      * @return new list of types with all possible AM and PM times
      */
@@ -48,6 +49,7 @@ public class TimeConfusionAMPM {
     /**
      * This method determines the right time out of the given times calculating
      * the difference between each of the times.
+     *
      * @param time String of three different times where of them two are delayed
      */
     public static void rightTime(String time) {

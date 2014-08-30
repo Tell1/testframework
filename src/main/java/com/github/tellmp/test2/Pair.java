@@ -1,14 +1,12 @@
 package com.github.tellmp.test2;
 
-import java.util.Comparator;
-
 /**
  * A pair of some types
- * 
+ * <p/>
  * Is immutable
  * Is equal if and only if both of it's pair objects are equal
  * Comparable - should compare the second type only
- * 
+ *
  * @param <T1> First pair type
  * @param <T2> Second pair type
  */
